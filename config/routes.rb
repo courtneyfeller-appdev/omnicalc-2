@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #base
+  get("/", { :controller => "application", :action => "addition" })
+
 
   #addition
   get("/add", { :controller => "application", :action => "addition" })
